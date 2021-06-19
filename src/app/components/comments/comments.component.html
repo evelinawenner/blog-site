@@ -1,0 +1,5 @@
+<div class="comments-container">
+    <h1>Kommentarer</h1>
+<app-create-comment></app-create-comment>
+<div *ngIf="post"><app-show-comments *ngFor="let c of post.comments" [comments]="c"></app-show-comments></div>
+</div>

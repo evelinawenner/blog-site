@@ -1,0 +1,6 @@
+
+<div class="posts-container">
+    <h1>Skriv inlägg</h1>
+    <app-create-post></app-create-post>
+<div *ngIf="blog"><app-show-posts *ngFor="let p of blog.posts" [post]="p"></app-show-posts></div>
+</div>

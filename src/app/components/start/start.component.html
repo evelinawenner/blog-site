@@ -1,0 +1,5 @@
+<div class="start-container">
+    <h1>Eves bloggportal</h1>
+<app-create-blog></app-create-blog>
+<app-show-blogs *ngFor="let b of blogs index as i" [blog]="b"></app-show-blogs>
+</div>
